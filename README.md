@@ -37,7 +37,7 @@ qemu callstack
 #13 parse_stream_outer (inp=0x466c2c80, inp@entry=0x465917f0, flag=flag@entry=3) at common/cli_hush.c:3211  
 #14 0x00000000476fa870 in parse_string_outer (flag=3, s=0x466c2c80 "") at common/cli_hush.c:3277  
 #15 parse_string_outer (s=0x466c2c80 "", flag=3) at common/cli_hush.c:3261  
-#16 0x00000000476d7f00 in qfw_boot (dev=<optimized out>, bflow=<optimized out>) at boot/bootmeth_qfw.c:65  //QEMU uboot
+#16 0x00000000476d7f00 in qfw_boot (dev=<optimized out>, bflow=<optimized out>) at boot/bootmeth_qfw.c:65  //QEMU uboot  
 #17 0x00000000476dac58 in bootflow_boot (bflow=<optimized out>) at boot/bootflow.c:510  
 
 
