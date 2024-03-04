@@ -17,7 +17,9 @@ $8 = 0x7ff12000
 (gdb) add-symbol-file u-boot $8
 
 
-qemu callstack  
+qemu callstack 
+#0  armv8_switch_to_el2 () at arch/arm/cpu/armv8/transition.S:30->br x4 //x4 is kernel entry point   
+#1  0x00000000476d4ca4 in boot_jump_linux (images=0x477d1e88, flag=<optimized out>) at arch/arm/lib/bootm.c:326  
 #0  do_bootm_linux (flag=256, argc=3, argv=0x466c2fb8, images=0x477d1e88) at arch/arm/lib/bootm.c:385  
 #1  0x00000000476d5f98 in do_bootm_states (cmdtp=0x477a6c28, flag=0, argc=3, argv=0x466c2fb8, states=5904, images=0x477d1e88, boot_progress=<optimized out>)
     at boot/bootm.c:861  
